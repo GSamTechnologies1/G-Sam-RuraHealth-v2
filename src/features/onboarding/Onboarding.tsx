@@ -13,10 +13,6 @@ function Onboarding() {
     }
   };
 
-  const skipSlides = () => {
-    setCurrent(slides.length - 1);
-  };
-
   const slide = slides[current];
 
   return (
