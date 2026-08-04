@@ -1,0 +1,126 @@
+.auth-screen {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #e9f8f5, #ffffff);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.auth-card {
+  background: white;
+
+  width: 100%;
+  max-width: 430px;
+
+  padding: 40px;
+
+  border-radius: 24px;
+
+  text-align: center;
+
+  box-shadow: 0 12px 35px rgba(0,0,0,.08);
+}
+
+.logo {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.auth-card h1 {
+  color: #157a74;
+  margin-bottom: 15px;
+}
+
+.auth-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.create-btn,
+.signin-btn {
+
+  width: 100%;
+
+  padding: 15px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-size: 17px;
+
+  transition: .3s;
+
+  margin-bottom: 18px;
+}
+
+.create-btn {
+
+  background: #157a74;
+
+  color: white;
+
+  border: none;
+}
+
+.create-btn:hover {
+
+  background: #0d5e59;
+}
+
+.signin-btn {
+
+  background: white;
+
+  border: 2px solid #157a74;
+
+  color: #157a74;
+}
+
+.signin-btn:hover {
+
+  background: #157a74;
+
+  color: white;
+}
+
+.divider {
+
+  display: flex;
+
+  align-items: center;
+
+  margin: 18px 0;
+}
+
+.divider::before,
+.divider::after {
+
+  content: "";
+
+  flex: 1;
+
+  height: 1px;
+
+  background: #ddd;
+}
+
+.divider span {
+
+  padding: 0 15px;
+
+  color: #888;
+}
+
+small {
+
+  display: block;
+
+  margin-top: 20px;
+
+  color: #888;
+}
