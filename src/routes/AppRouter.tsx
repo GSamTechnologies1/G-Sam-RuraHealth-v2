@@ -1,48 +1,242 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
-import SplashScreen from "../features/splash/SplashScreen";
-import LanguageScreen from "../features/language/LanguageScreen";
-import Onboarding from "../features/onboarding/Onboarding";
-import AuthScreen from "../features/auth/AuthScreen";
-import Register from "../features/auth/Register";
-import Login from "../features/auth/Login";
-import Home from "../features/home/Home";
-import AIHealthAssistant from "../features/ai/AIHealthAssistant";
+// ===============================
+// PAGES
+// ===============================
+import LandingPage from "../pages/LandingPage";
 import PatientRegistration from "../pages/PatientRegistration";
 import PatientRecords from "../pages/PatientRecords";
 import BookAppointment from "../pages/BookAppointment";
 
+import ReceptionistDashboard from "../pages/ReceptionistDashboard";
+import DoctorsDashboard from "../pages/DoctorsDashboard";
+import Consultation from "../pages/Consultation";
+import AdminDashboard from "../pages/AdminDashboard";
+import CitizenDashboard from "../pages/CitizenDashboard";
+import Appointments from "../pages/Appointments";
+
+import Breastfeeding from "../features/health/Breastfeeding";
+import BreastCancerAwareness from "../features/health/breast-cancer/Breast-CancerAwareness";
+
+import HealthCentres from "../pages/HealthCentres";
+import Emergency from "../pages/Emergency";
+import Notifications from "../pages/Notifications";
+import HealthRecords from "../pages/HealthRecords";
+
+// ===============================
+// LANGUAGE & ONBOARDING
+// ===============================
+import LanguageScreen from "../features/language/LanguageScreen";
+import Onboarding from "../features/onboarding/Onboarding";
+
+// ===============================
+// CITIZEN AUTHENTICATION
+// ===============================
+import AuthPage from "../features/auth/AuthPage";
+import Register from "../features/auth/Register";
+import Login from "../features/auth/Login";
+
+// ===============================
+// CITIZEN FEATURES
+// ===============================
+import Home from "../features/home/Home";
+import AIHealthAssistant from "../features/ai/AIHealthAssistant";
+
+// ===============================
+// STAFF
+// ===============================
+import StaffPortal from "../features/staff/StaffPortal";
+import StaffLogin from "../features/staff/StaffLogin";
+
 function AppRouter() {
   return (
     <BrowserRouter>
-
       <Routes>
 
-        <Route path="/" element={<Navigate to="/splash" />} />
+        {/* =====================================
+            LANDING PAGE
+        ===================================== */}
+        <Route
+          path="/"
+          element={<LandingPage />}
+        />
 
-        <Route path="/splash" element={<SplashScreen />} />
+        {/* =====================================
+            LANGUAGE
+        ===================================== */}
+        <Route
+          path="/language"
+          element={<LanguageScreen />}
+        />
 
-        <Route path="/language" element={<LanguageScreen />} />
+        {/* =====================================
+            ONBOARDING
+        ===================================== */}
+        <Route
+          path="/onboarding"
+          element={<Onboarding />}
+        />
 
-        <Route path="/onboarding" element={<Onboarding />} />
+        {/* =====================================
+            CITIZEN AUTHENTICATION
+        ===================================== */}
+        <Route
+          path="/auth"
+          element={<AuthPage />}
+        />
 
-        <Route path="/auth" element={<AuthScreen />} />
+        <Route
+          path="/create-account"
+          element={<Register />}
+        />
 
-        <Route path="/register" element={<Register />} />
+        <Route
+          path="/sign-in"
+          element={<Login />}
+        />
 
-        <Route path="/login" element={<Login />} />
+        {/* =====================================
+            CITIZEN DASHBOARD
+        ===================================== */}
+        <Route
+          path="/citizen-dashboard"
+          element={<CitizenDashboard />}
+        />
 
-        <Route path="/home" element={<Home />} />
+        {/* =====================================
+            CITIZEN HOME
+        ===================================== */}
+        <Route
+          path="/home"
+          element={<Home />}
+        />
 
-        <Route path="/ai" element={<AIHealthAssistant />} />
+        {/* =====================================
+            AI HEALTH ASSISTANT
+        ===================================== */}
+        <Route
+          path="/ai"
+          element={<AIHealthAssistant />}
+        />
 
-<Route path="/patient-registration" element={<PatientRegistration />} />
+        {/* =====================================
+            CITIZEN FEATURES
+        ===================================== */}
+        <Route
+          path="/emergency"
+          element={<Emergency />}
+        />
 
-<Route path="/patients" element={<PatientRecords />} />
+        <Route
+          path="/notifications"
+          element={<Notifications />}
+        />
 
-<Route path="/book-appointment" element={<BookAppointment />} />
+        <Route
+          path="/health-records"
+          element={<HealthRecords />}
+        />
+
+        <Route
+          path="/appointments"
+          element={<Appointments />}
+        />
+
+        <Route
+          path="/health-centres"
+          element={<HealthCentres />}
+        />
+
+        {/* =====================================
+            STAFF AUTHENTICATION
+        ===================================== */}
+        <Route
+          path="/staff-login"
+          element={<StaffLogin />}
+        />
+
+        {/* =====================================
+            STAFF PORTAL
+        ===================================== */}
+        <Route
+          path="/staff-portal"
+          element={<StaffPortal />}
+        />
+
+        {/* =====================================
+            PATIENT REGISTRATION
+        ===================================== */}
+        <Route
+          path="/patient-registration"
+          element={<PatientRegistration />}
+        />
+
+        {/* =====================================
+            PATIENT RECORDS
+        ===================================== */}
+        <Route
+          path="/patients"
+          element={<PatientRecords />}
+        />
+
+        {/* =====================================
+            BOOK APPOINTMENT
+        ===================================== */}
+        <Route
+          path="/book-appointment"
+          element={<BookAppointment />}
+        />
+
+        {/* =====================================
+            RECEPTIONIST DASHBOARD
+        ===================================== */}
+        <Route
+          path="/receptionist-dashboard"
+          element={<ReceptionistDashboard />}
+        />
+
+        {/* =====================================
+            DOCTOR DASHBOARD
+        ===================================== */}
+        <Route
+          path="/doctor-dashboard"
+          element={<DoctorsDashboard />}
+        />
+
+        {/* =====================================
+            CONSULTATION
+        ===================================== */}
+        <Route
+          path="/consultation/:appointmentId"
+          element={<Consultation />}
+        />
+
+        {/* =====================================
+            ADMIN DASHBOARD
+        ===================================== */}
+        <Route
+          path="/admin-dashboard"
+          element={<AdminDashboard />}
+        />
+
+        {/* =====================================
+            HEALTH EDUCATION
+        ===================================== */}
+        <Route
+          path="/breastfeeding"
+          element={<Breastfeeding />}
+        />
+
+        <Route
+          path="/health-education/breast-cancer"
+          element={<BreastCancerAwareness />}
+        />
+
       </Routes>
-
     </BrowserRouter>
   );
 }

@@ -5,43 +5,39 @@ import { auth } from "../../firebase/firebaseConfig";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-const navigate = useNavigate();
+
+  const navigate = useNavigate();
 
   const handleLogin = async () => {
-
     try {
-
       await signInWithEmailAndPassword(
         auth,
         email,
         password
       );
 
-     navigate("/home");
+      // Successful STAFF login
+      navigate("/staff-portal");
 
     } catch (error: any) {
-
       console.error(error);
 
       alert(error.message);
-
     }
-
   };
 
   return (
-
     <div className="login-container">
 
       <div className="login-card">
 
-        <h1>Welcome Back</h1>
+        <h1>Staff Login</h1>
 
         <p>
-          Sign in to continue using G-Sam RuraHealth.
+          Sign in to access the G-Sam RuraHealth
+          staff portal.
         </p>
 
         <form
@@ -55,14 +51,20 @@ const navigate = useNavigate();
             type="email"
             placeholder="Email Address"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) =>
+              setEmail(e.target.value)
+            }
+            required
           />
 
           <input
             type="password"
             placeholder="Password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e) =>
+              setPassword(e.target.value)
+            }
+            required
           />
 
           <button type="submit">
@@ -74,7 +76,5 @@ const navigate = useNavigate();
       </div>
 
     </div>
-
   );
-
 }

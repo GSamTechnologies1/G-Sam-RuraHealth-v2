@@ -1,21 +1,11 @@
 export interface Appointment {
-
-  appointmentId: string;
-
+  id?: string;
+  bookingId: string;
   patientId: string;
-
   department: string;
-
   doctor: string;
-
   appointmentDate: string;
-
   appointmentTime: string;
-
   reason: string;
-
   status: string;
-
 }
-
-export const appointments: Appointment[] = [];

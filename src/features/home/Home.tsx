@@ -2,18 +2,42 @@ import "./Home.css";
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
-
   const navigate = useNavigate();
 
   return (
-
     <div className="home">
 
       <header>
 
-        <h1>🏥 G-Sam RuraHealth</h1>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <div>
+            <h1>🏥 G-Sam RuraHealth</h1>
 
-        <p>Welcome Back!</p>
+            <h2>Akwa Ibom State Digital Health Platform</h2>
+
+            <p>Connecting Every Citizen to Quality Healthcare</p>
+          </div>
+
+          <button
+            style={{
+              padding: "10px 18px",
+              borderRadius: "10px",
+              border: "none",
+              background: "#0B8457",
+              color: "#fff",
+              cursor: "pointer",
+            }}
+            onClick={() => navigate("/language")}
+          >
+            🌐 Language
+          </button>
+        </div>
 
       </header>
 
@@ -21,75 +45,34 @@ export default function Home() {
 
         <div
           className="card"
-          onClick={() => navigate("/ai")}
+          onClick={() => navigate("/register")}
         >
-          <h2>❤️</h2>
-          <h3>AI Health Assistant</h3>
-        </div>
+          <h2>👨</h2>
 
-        <div className="card">
-          <h2>🩺</h2>
-          <h3>Symptom Checker</h3>
-        </div>
+          <h3>Citizens Portal</h3>
 
-        <div className="card">
-          <h2>🗓️</h2>
-          <h3>Appointments</h3>
-        </div>
-
-        <div className="card">
-          <h2>💊</h2>
-          <h3>Medication</h3>
-        </div>
-
-        <div className="card">
-          <h2>📍</h2>
-          <h3>Nearby Clinics</h3>
-        </div>
-
-        <div className="card">
-          <h2>🚑</h2>
-          <h3>Emergency</h3>
-        </div>
-
-        <div className="card">
-          <h2>🌍</h2>
-          <h3>Health Tips</h3>
-        </div>
-
-        <div className="card">
-          <h2>👤</h2>
-          <h3>Profile</h3>
+          <p>
+            Register, Book Appointment,
+            Access AI Health Assistant,
+            View Your Health Records
+          </p>
         </div>
 
         <div
-  className="card"
-  onClick={() => navigate("/patient-registration")}
->
-  <h2>📝</h2>
-  <h3>Patient Registration</h3>
-</div>
+          className="card"
+          onClick={() => navigate("/staff-portal")}
+        >
+          <h2>👨‍⚕️</h2>
 
-<div
-  className="card"
-  onClick={() => navigate("/patients")}
->
-  <h2>📋</h2>
-  <h3>Patient Records</h3>
-</div>
+          <h3>Health Workers Portal</h3>
 
-<div
-  className="card"
-  onClick={() => navigate("/book-appointment")}
->
-  <h2>📅</h2>
-  <h3>Book Appointment</h3>
-</div>
+          <p>
+            Receptionist • Doctor • Laboratory • Pharmacy • Admin
+          </p>
+        </div>
 
       </div>
 
     </div>
-
   );
-
 }

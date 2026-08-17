@@ -1,0 +1,734 @@
+/* =========================================================
+   G-SAM RURAHEALTH
+   CITIZEN DASHBOARD
+   ========================================================= */
+
+.citizen-dashboard {
+  min-height: 100vh;
+  background: #f4f8f6;
+  color: #1f2937;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 90px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.citizen-header {
+  background: linear-gradient(
+    135deg,
+    #087f5b,
+    #0b9b6d
+  );
+
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.citizen-header-content {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.citizen-header h1 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.citizen-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.citizen-profile-btn {
+  width: 46px;
+  height: 46px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+
+  font-size: 21px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.citizen-profile-btn:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+.citizen-main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+
+/* =========================================================
+   WELCOME
+   ========================================================= */
+
+.citizen-welcome {
+  background: linear-gradient(
+    135deg,
+    #e5f7f0,
+    #ffffff
+  );
+
+  border: 1px solid #d7eee5;
+
+  border-radius: 18px;
+
+  padding: 28px;
+
+  margin-bottom: 30px;
+
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.welcome-small {
+  margin: 0 0 7px;
+
+  color: #0b8457;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.citizen-welcome h2 {
+  margin: 0;
+
+  font-size: 28px;
+
+  color: #123b2d;
+}
+
+.citizen-welcome p:last-child {
+  margin: 10px 0 0;
+
+  color: #65756e;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.citizen-section {
+  margin-bottom: 35px;
+}
+
+.citizen-section > h2 {
+  margin: 0 0 6px;
+
+  color: #183c31;
+
+  font-size: 21px;
+}
+
+.citizen-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.citizen-section-heading h2 {
+  margin: 0;
+
+  color: #183c31;
+
+  font-size: 21px;
+}
+
+.citizen-section-heading p {
+  margin: 5px 0 0;
+
+  color: #77827d;
+
+  font-size: 14px;
+}
+
+.citizen-section-heading button {
+  border: none;
+
+  background: transparent;
+
+  color: #087f5b;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   QUICK SERVICES
+   ========================================================= */
+
+.citizen-service-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 18px;
+
+  margin-top: 18px;
+}
+
+.citizen-service-card {
+  border: 1px solid #e1e8e5;
+
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 22px;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.citizen-service-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #b8dfd0;
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.citizen-service-card > span {
+  display: block;
+
+  font-size: 32px;
+
+  margin-bottom: 14px;
+}
+
+.citizen-service-card strong {
+  display: block;
+
+  color: #183c31;
+
+  font-size: 15px;
+}
+
+.citizen-service-card small {
+  display: block;
+
+  margin-top: 6px;
+
+  color: #7a8580;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   EMERGENCY
+   ========================================================= */
+
+.emergency-card {
+  border-color: #f2d1d1;
+}
+
+.emergency-card:hover {
+  border-color: #e7a9a9;
+}
+
+
+/* =========================================================
+   MY HEALTH
+   ========================================================= */
+
+.citizen-health-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+
+  margin-top: 18px;
+}
+
+.citizen-health-grid button {
+  border: 1px solid #e1e8e5;
+
+  background: white;
+
+  border-radius: 13px;
+
+  padding: 20px 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #087f5b;
+
+  font-size: 25px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.citizen-health-grid button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.citizen-health-grid span {
+  color: #374840;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   MATERNAL & FAMILY HEALTH
+   ========================================================= */
+
+.citizen-feature-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin-top: 18px;
+}
+
+.citizen-feature-grid button {
+  border: 1px solid #e1e8e5;
+
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 20px;
+
+  display: flex;
+
+  gap: 15px;
+
+  align-items: flex-start;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.citizen-feature-grid button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 20px rgba(0, 0, 0, 0.06);
+}
+
+.citizen-feature-grid button > span {
+  font-size: 30px;
+}
+
+.citizen-feature-grid strong {
+  color: #183c31;
+
+  font-size: 15px;
+}
+
+.citizen-feature-grid p {
+  margin: 6px 0 0;
+
+  color: #7a8580;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   HEALTH EDUCATION
+   ========================================================= */
+
+.health-topic-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.health-topic-grid button {
+  border: 1px solid #e1e8e5;
+
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 22px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.health-topic-grid button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 20px rgba(0, 0, 0, 0.06);
+}
+
+.health-topic-grid button:first-child {
+  background: #fff8f8;
+}
+
+.health-topic-grid button:nth-child(2) {
+  background: #f5fbff;
+}
+
+.health-topic-grid button:nth-child(3) {
+  background: #f7fcf8;
+}
+
+.health-topic-grid button {
+  font-size: 30px;
+}
+
+.health-topic-grid strong {
+  margin-top: 12px;
+
+  color: #183c31;
+
+  font-size: 15px;
+}
+
+.health-topic-grid span {
+  margin-top: 6px;
+
+  color: #78847f;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   MORE SERVICES
+   ========================================================= */
+
+.citizen-mini-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+
+  margin-top: 18px;
+}
+
+.citizen-mini-grid button {
+  background: white;
+
+  border: 1px solid #e1e8e5;
+
+  border-radius: 13px;
+
+  padding: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #087f5b;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.citizen-mini-grid button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.citizen-mini-grid span {
+  color: #374840;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   BOTTOM NAVIGATION
+   ========================================================= */
+
+.citizen-bottom-nav {
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 72px;
+
+  background: white;
+
+  border-top: 1px solid #e2e8e5;
+
+  display: flex;
+
+  justify-content: center;
+
+  z-index: 200;
+
+  box-shadow:
+    0 -4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.citizen-bottom-nav button {
+  width: 130px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #7b8580;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 4px;
+
+  cursor: pointer;
+
+  font-size: 19px;
+}
+
+.citizen-bottom-nav button span {
+  font-size: 11px;
+}
+
+.citizen-bottom-nav button.active {
+  color: #087f5b;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+  .citizen-service-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .citizen-health-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .citizen-feature-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .health-topic-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .citizen-mini-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .citizen-dashboard {
+    padding-bottom: 78px;
+  }
+
+  .citizen-header {
+    padding: 15px;
+  }
+
+  .citizen-header h1 {
+    font-size: 20px;
+  }
+
+  .citizen-header p {
+    font-size: 12px;
+  }
+
+  .citizen-profile-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .citizen-main {
+    padding: 20px 14px;
+  }
+
+  .citizen-welcome {
+    padding: 22px;
+
+    border-radius: 15px;
+  }
+
+  .citizen-welcome h2 {
+    font-size: 22px;
+  }
+
+  .citizen-service-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 12px;
+  }
+
+  .citizen-service-card {
+    padding: 17px;
+  }
+
+  .citizen-service-card > span {
+    font-size: 27px;
+  }
+
+  .citizen-service-card strong {
+    font-size: 13px;
+  }
+
+  .citizen-service-card small {
+    font-size: 11px;
+  }
+
+  .citizen-health-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 10px;
+  }
+
+  .citizen-health-grid button {
+    padding: 15px 10px;
+  }
+
+  .citizen-feature-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .health-topic-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .citizen-mini-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 10px;
+  }
+
+  .citizen-mini-grid button {
+    padding: 14px 10px;
+  }
+
+  .citizen-bottom-nav {
+    height: 65px;
+  }
+
+  .citizen-bottom-nav button {
+    width: 20%;
+
+    font-size: 17px;
+  }
+
+  .citizen-bottom-nav button span {
+    font-size: 10px;
+  }
+
+}

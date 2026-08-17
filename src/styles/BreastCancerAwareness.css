@@ -1,0 +1,501 @@
+/* =========================================================
+   G-SAM RURAHEALTH
+   BREAST CANCER AWARENESS
+   ========================================================= */
+
+.breast-cancer-page {
+  min-height: 100vh;
+  padding: 25px 18px 50px;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(236, 72, 153, 0.10),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #fff7fb 0%,
+      #ffffff 48%,
+      #f0fdfa 100%
+    );
+  color: #173b35;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.breast-cancer-header {
+  max-width: 1050px;
+  margin: 0 auto 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.breast-cancer-back {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+  border: none;
+  border-radius: 14px;
+  background: #075e54;
+  color: #ffffff;
+  font-size: 23px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.breast-cancer-back:hover {
+  transform: translateX(-2px);
+  background: #064e46;
+}
+
+.breast-cancer-label {
+  margin: 0 0 3px;
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.breast-cancer-header h1 {
+  margin: 0;
+  color: #075e54;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.breast-cancer-header p:last-child {
+  margin: 5px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.breast-cancer-hero {
+  max-width: 1050px;
+  margin: 0 auto 22px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: 25px;
+  background:
+    linear-gradient(
+      135deg,
+      #9d174d,
+      #be185d,
+      #db2777
+    );
+  color: #ffffff;
+  box-shadow: 0 18px 45px rgba(157, 23, 77, 0.18);
+}
+
+.breast-cancer-hero-icon {
+  width: 78px;
+  height: 78px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 42px;
+}
+
+.breast-cancer-badge {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 11px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.breast-cancer-hero h2 {
+  margin: 0 0 10px;
+  font-size: 29px;
+  line-height: 1.2;
+}
+
+.breast-cancer-hero p {
+  max-width: 780px;
+  margin: 0;
+  color: #ffe4ef;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.breast-cancer-section {
+  max-width: 1050px;
+  margin: 0 auto 22px;
+}
+
+.breast-cancer-section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.breast-cancer-section-title > span {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: #fce7f3;
+  font-size: 22px;
+}
+
+.breast-cancer-section-title h2 {
+  margin: 0;
+  color: #075e54;
+  font-size: 20px;
+}
+
+.breast-cancer-section-title p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   WARNING SIGNS
+   ========================================================= */
+
+.breast-cancer-signs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.breast-cancer-info-card {
+  padding: 21px;
+  background: #ffffff;
+  border: 1px solid #f3d8e5;
+  border-radius: 18px;
+  box-shadow: 0 7px 25px rgba(157, 23, 77, 0.06);
+}
+
+.breast-cancer-info-card > span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 25px;
+}
+
+.breast-cancer-info-card h3 {
+  margin: 0 0 7px;
+  color: #075e54;
+  font-size: 16px;
+}
+
+.breast-cancer-info-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   HIGHLIGHT
+   ========================================================= */
+
+.breast-cancer-highlight {
+  display: flex;
+  gap: 18px;
+  padding: 25px;
+  border: 1px solid #bdeee5;
+  border-radius: 20px;
+  background: #f0fdfa;
+}
+
+.highlight-icon {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: #ffffff;
+  font-size: 27px;
+}
+
+.breast-cancer-highlight h2 {
+  margin: 0 0 8px;
+  color: #075e54;
+  font-size: 19px;
+}
+
+.breast-cancer-highlight p {
+  margin: 0 0 8px;
+  color: #526b68;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.breast-cancer-highlight p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   RISK FACTORS
+   ========================================================= */
+
+.breast-cancer-risk-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.breast-cancer-risk-list > div {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 16px;
+  border-radius: 15px;
+  background: #ffffff;
+  border: 1px solid #e5f3ef;
+}
+
+.breast-cancer-risk-list span {
+  width: 31px;
+  height: 31px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #075e54;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.breast-cancer-risk-list p {
+  margin: 0;
+  color: #526b68;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   ACTION
+   ========================================================= */
+
+.breast-cancer-action {
+  max-width: 1050px;
+  margin: 0 auto 25px;
+  padding: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  border-radius: 21px;
+  background: #075e54;
+  color: #ffffff;
+  box-shadow: 0 15px 35px rgba(7, 94, 84, 0.17);
+}
+
+.action-icon {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 28px;
+}
+
+.breast-cancer-action h2 {
+  margin: 0 0 7px;
+  font-size: 20px;
+}
+
+.breast-cancer-action p {
+  max-width: 700px;
+  margin: 0;
+  color: #d7f8f2;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.breast-cancer-action button {
+  flex: 0 0 auto;
+  padding: 12px 19px;
+  border: none;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #075e54;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   MYTH & FACT
+   ========================================================= */
+
+.breast-cancer-myth-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.breast-cancer-myth-grid article {
+  padding: 21px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5f3ef;
+}
+
+.breast-cancer-myth-grid article > span {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.breast-cancer-myth-grid article:first-child > span {
+  color: #be123c;
+}
+
+.breast-cancer-myth-grid article:last-child > span {
+  color: #047857;
+}
+
+.breast-cancer-myth-grid h3 {
+  margin: 8px 0;
+  color: #075e54;
+  font-size: 16px;
+}
+
+.breast-cancer-myth-grid p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.breast-cancer-footer {
+  max-width: 1050px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.breast-cancer-footer p {
+  margin: 4px 0;
+  color: #7b8b89;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .breast-cancer-signs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE / ANDROID
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .breast-cancer-page {
+    padding: 18px 12px 35px;
+  }
+
+  .breast-cancer-header {
+    gap: 10px;
+  }
+
+  .breast-cancer-back {
+    width: 42px;
+    height: 42px;
+  }
+
+  .breast-cancer-header h1 {
+    font-size: 21px;
+  }
+
+  .breast-cancer-header p:last-child {
+    font-size: 12px;
+  }
+
+  .breast-cancer-hero {
+    padding: 22px 18px;
+    border-radius: 20px;
+    align-items: flex-start;
+  }
+
+  .breast-cancer-hero-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 16px;
+    font-size: 30px;
+  }
+
+  .breast-cancer-hero h2 {
+    font-size: 22px;
+  }
+
+  .breast-cancer-hero p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .breast-cancer-signs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .breast-cancer-risk-list {
+    grid-template-columns: 1fr;
+  }
+
+  .breast-cancer-highlight {
+    padding: 19px;
+  }
+
+  .breast-cancer-action {
+    padding: 22px 18px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .breast-cancer-action button {
+    width: 100%;
+  }
+
+  .breast-cancer-myth-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1,0 +1,475 @@
+/* =========================================================
+   G-SAM RURAHEALTH
+   BREASTFEEDING DAILY JOURNEY
+   ========================================================= */
+
+.breastfeeding-page {
+  min-height: 100vh;
+  padding: 32px 20px 50px;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(20, 184, 166, 0.12),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #f0fdf4 0%,
+      #ffffff 45%,
+      #ecfeff 100%
+    );
+  color: #173b35;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.breastfeeding-header {
+  max-width: 1050px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.breastfeeding-header-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(15, 118, 110, 0.12);
+  font-size: 32px;
+}
+
+.breastfeeding-header h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+  color: #075e54;
+}
+
+.breastfeeding-header p {
+  margin: 5px 0 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* =========================================================
+   PROGRESS
+   ========================================================= */
+
+.breastfeeding-progress {
+  max-width: 1050px;
+  margin: 0 auto 22px;
+  padding: 18px 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(15, 118, 110, 0.08);
+}
+
+.progress-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 11px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.progress-top strong {
+  color: #075e54;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 9px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #dff5ef;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #0f766e, #14b8a6);
+  transition: width 0.35s ease;
+}
+
+/* =========================================================
+   TODAY'S TIP
+   ========================================================= */
+
+.today-tip-card {
+  position: relative;
+  max-width: 1050px;
+  margin: 0 auto 22px;
+  padding: 38px 35px;
+  overflow: hidden;
+  border-radius: 26px;
+  background: linear-gradient(135deg, #075e54, #0f766e);
+  color: #ffffff;
+  box-shadow: 0 18px 45px rgba(7, 94, 84, 0.2);
+}
+
+.today-tip-card::after {
+  content: "🤱";
+  position: absolute;
+  right: 35px;
+  bottom: -25px;
+  font-size: 120px;
+  opacity: 0.08;
+}
+
+.tip-category {
+  display: inline-block;
+  margin-bottom: 13px;
+  padding: 7px 13px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.today-tip-card h2 {
+  margin: 0 0 15px;
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.tip-day {
+  margin-bottom: 7px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #99f6e4;
+}
+
+.today-tip-card h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 14px;
+  max-width: 720px;
+  font-size: 31px;
+  line-height: 1.2;
+}
+
+.tip-message {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #e6fffb;
+}
+
+/* =========================================================
+   INFORMATION CARDS
+   ========================================================= */
+
+.breastfeeding-info-grid {
+  max-width: 1050px;
+  margin: 0 auto 22px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.info-card {
+  display: flex;
+  gap: 15px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e5f3ef;
+  border-radius: 20px;
+  box-shadow: 0 8px 28px rgba(15, 118, 110, 0.07);
+}
+
+.info-icon {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ecfdf5;
+  font-size: 24px;
+}
+
+.info-card h3 {
+  margin: 0 0 7px;
+  color: #075e54;
+  font-size: 17px;
+}
+
+.info-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   EXCLUSIVE BREASTFEEDING CARD
+   ========================================================= */
+
+.exclusive-card {
+  max-width: 1050px;
+  margin: 0 auto 25px;
+  padding: 22px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  border: 1px solid #bdeee5;
+  border-radius: 20px;
+  background: #f0fdfa;
+}
+
+.exclusive-icon {
+  flex: 0 0 auto;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: #ffffff;
+  font-size: 25px;
+}
+
+.exclusive-card h3 {
+  margin: 0 0 7px;
+  color: #075e54;
+  font-size: 17px;
+}
+
+.exclusive-card p {
+  margin: 0;
+  color: #526b68;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.breastfeeding-navigation {
+  max-width: 1050px;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.breastfeeding-navigation button {
+  min-width: 125px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  background: #075e54;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.breastfeeding-navigation button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: #064e46;
+}
+
+.breastfeeding-navigation button:disabled {
+  cursor: not-allowed;
+  opacity: 0.35;
+}
+
+.breastfeeding-navigation span {
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.breastfeeding-footer {
+  max-width: 1050px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.breastfeeding-footer p {
+  margin: 0;
+  color: #7b8b89;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .breastfeeding-page {
+    padding: 24px 15px 40px;
+  }
+
+  .breastfeeding-header h1 {
+    font-size: 25px;
+  }
+
+  .breastfeeding-header-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 27px;
+  }
+
+  .today-tip-card {
+    padding: 30px 24px;
+    border-radius: 22px;
+  }
+
+  .today-tip-card h3 {
+    font-size: 27px;
+  }
+
+  .tip-message {
+    font-size: 16px;
+  }
+
+  .breastfeeding-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 520px) {
+  .breastfeeding-page {
+    padding: 18px 12px 32px;
+  }
+
+  .breastfeeding-header {
+    gap: 11px;
+    margin-bottom: 18px;
+  }
+
+  .breastfeeding-header-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    font-size: 24px;
+  }
+
+  .breastfeeding-header h1 {
+    font-size: 21px;
+  }
+
+  .breastfeeding-header p {
+    font-size: 12px;
+  }
+
+  .breastfeeding-progress {
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .progress-top {
+    font-size: 12px;
+  }
+
+  .today-tip-card {
+    padding: 25px 20px;
+    border-radius: 20px;
+  }
+
+  .tip-category {
+    font-size: 11px;
+  }
+
+  .today-tip-card h2 {
+    font-size: 16px;
+  }
+
+  .today-tip-card h3 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .tip-message {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .today-tip-card::after {
+    right: 5px;
+    font-size: 90px;
+  }
+
+  .info-card {
+    padding: 18px;
+    border-radius: 17px;
+  }
+
+  .info-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 21px;
+  }
+
+  .info-card h3 {
+    font-size: 15px;
+  }
+
+  .info-card p {
+    font-size: 13px;
+  }
+
+  .exclusive-card {
+    padding: 18px;
+    border-radius: 17px;
+  }
+
+  .exclusive-card h3 {
+    font-size: 15px;
+  }
+
+  .exclusive-card p {
+    font-size: 13px;
+  }
+
+  .breastfeeding-navigation {
+    gap: 8px;
+  }
+
+  .breastfeeding-navigation button {
+    min-width: 100px;
+    padding: 11px 10px;
+    font-size: 12px;
+  }
+
+  .breastfeeding-navigation span {
+    font-size: 11px;
+  }
+
+  .breastfeeding-footer p {
+    font-size: 11px;
+  }
+}
