@@ -125,13 +125,12 @@ export default function CitizenDashboard() {
 
           <div className="citizen-health-grid">
 
-            <button
-              onClick={() => navigate("/patients")}
-            >
-              📋
-              <span>My Health Records</span>
-            </button>
-
+            <button 
+  onClick={() => navigate("/health-records")} 
+> 
+  📋 
+  <span>My Health Records</span> 
+</button>
 
             <button
               onClick={() => navigate("/appointments")}
@@ -226,117 +225,143 @@ export default function CitizenDashboard() {
 
 
         {/* =========================
-            HEALTH EDUCATION
-        ========================= */}
-        <section className="citizen-section">
+    HEALTH EDUCATION
+========================= */}
 
-          <div className="citizen-section-heading">
+<section className="citizen-section">
 
-            <div>
-              <h2>Health Education</h2>
-              <p>Learn. Prevent. Stay Healthy.</p>
-            </div>
+  <div className="citizen-section-heading">
 
-            <button
-              onClick={() => navigate("/health-education")}
-            >
-              View All
-            </button>
+    <div>
+      <h2>Health Education</h2>
+      <p>Learn. Prevent. Stay Healthy.</p>
+    </div>
 
-          </div>
+    <button
+      onClick={() => navigate("/health-education")}
+    >
+      View All
+    </button>
 
-
-          <div className="health-topic-grid">
-
-            <button
-              onClick={() => navigate("/health-education/breast-cancer")}
-            >
-              🎗️
-              <strong>
-                Breast Cancer Awareness
-              </strong>
-              <span>
-                Know the warning signs.
-              </span>
-            </button>
+  </div>
 
 
-            <button
-              onClick={() => navigate("/health-education/immunization")}
-            >
-              💉
-              <strong>
-                Immunization
-              </strong>
-              <span>
-                Protect yourself and your family.
-              </span>
-            </button>
+  <div className="health-topic-grid">
+
+    <button
+      onClick={() => navigate("/health-education/breast-cancer")}
+    >
+      🎗️
+
+      <strong>
+        Breast Cancer Awareness
+      </strong>
+
+      <span>
+        Know the warning signs.
+      </span>
+
+    </button>
 
 
-            <button
-              onClick={() => navigate("/health-education/nutrition")}
-            >
-              🥗
-              <strong>
-                Nutrition
-              </strong>
-              <span>
-                Make healthier food choices.
-              </span>
-            </button>
+    <button
+      onClick={() => navigate("/immunization")}
+    >
+      💉
 
-          </div>
+      <strong>
+        Immunization
+      </strong>
 
-        </section>
+      <span>
+        Protect yourself and your family.
+      </span>
+
+    </button>
+
+
+    <button
+      onClick={() => navigate("/health-education/kidney-health")}
+    >
+      🫘
+
+      <strong>
+        Kidney Health
+      </strong>
+
+      <span>
+        Learn about kidney disease and prevention.
+      </span>
+
+    </button>
+
+
+    <button
+      onClick={() => navigate("/cardiac-arrest")}
+    >
+      ❤️
+
+      <strong>
+        Cardiac Arrest
+      </strong>
+
+      <span>
+        Learn how to recognize and respond to cardiac arrest.
+      </span>
+
+    </button>
+
+  </div>
+
+</section>
 
 
         {/* =========================
-            HEALTH SERVICES
-        ========================= */}
-        <section className="citizen-section">
+    HEALTH SERVICES
+========================= */}
 
-          <h2>More Services</h2>
+<section className="citizen-section">
 
-          <div className="citizen-mini-grid">
+  <h2>More Services</h2>
 
-            <button
-              onClick={() => navigate("/medicine-availability")}
-            >
-              💊
-              <span>Medicine Availability</span>
-            </button>
+  <div className="citizen-mini-grid">
 
-
-            <button
-              onClick={() => navigate("/laboratory")}
-            >
-              🧪
-              <span>Laboratory</span>
-            </button>
+    <button
+      onClick={() => navigate("/medicine-availability")}
+    >
+      💊
+      <span>Medicine Availability</span>
+    </button>
 
 
-            <button
-              onClick={() => navigate("/health-centres")}
-            >
-              📍
-              <span>Health Centre Directory</span>
-            </button>
+    <button
+      onClick={() => navigate("/laboratory")}
+    >
+      🧪
+      <span>Laboratory</span>
+    </button>
 
 
-            <button
-              onClick={() => navigate("/notifications")}
-            >
-              🔔
-              <span>Notifications</span>
-            </button>
+    <button
+      onClick={() => navigate("/health-centres")}
+    >
+      📍
+      <span>Health Centre Directory</span>
+    </button>
 
-          </div>
 
-        </section>
+    <button
+      onClick={() => navigate("/notifications")}
+    >
+      🔔
+      <span>Notifications</span>
+    </button>
+
+  </div>
+
+</section>
 
       </main>
-
 
       {/* =========================
           BOTTOM NAVIGATION

@@ -1,0 +1,801 @@
+/* =====================================================
+   G-SAM RURAHEALTH
+   CHILD HEALTH PAGE
+   ===================================================== */
+
+.child-health-page {
+  min-height: 100vh;
+  background: #f4f7f6;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.child-health-header {
+  background: linear-gradient(135deg, #0b8457, #08744d);
+  color: white;
+  padding: 18px 30px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.child-health-header-content {
+  max-width: 1180px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.child-health-back-btn {
+  width: 44px;
+  height: 44px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.16);
+  color: white;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.child-health-back-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.child-health-header h1 {
+  margin: 0;
+
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.child-health-header p {
+  margin: 4px 0 0;
+
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+
+/* =====================================================
+   MAIN
+   ===================================================== */
+
+.child-health-main {
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 30px 20px 100px;
+}
+
+
+/* =====================================================
+   HERO
+   ===================================================== */
+
+.child-health-intro {
+  position: relative;
+
+  overflow: hidden;
+
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 35px;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.child-health-intro::after {
+  content: "👶";
+
+  position: absolute;
+
+  right: 35px;
+  bottom: 15px;
+
+  font-size: 90px;
+
+  opacity: 0.08;
+}
+
+.child-health-intro h2 {
+  position: relative;
+  z-index: 1;
+
+  margin: 0 0 10px;
+
+  color: #0b8457;
+
+  font-size: 30px;
+}
+
+.child-health-intro p {
+  position: relative;
+  z-index: 1;
+
+  max-width: 760px;
+
+  margin: 0;
+
+  color: #667085;
+
+  line-height: 1.7;
+
+  font-size: 15px;
+}
+
+
+/* =====================================================
+   ESSENTIALS
+   ===================================================== */
+
+.child-health-info-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 16px;
+
+  margin-top: 24px;
+}
+
+.child-health-info-card {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  padding: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.035);
+}
+
+.child-health-info-icon {
+  width: 46px;
+  height: 46px;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: #e8f7f1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 23px;
+}
+
+.child-health-info-card small {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #667085;
+
+  font-size: 12px;
+}
+
+.child-health-info-card strong {
+  display: block;
+
+  color: #1f2937;
+
+  font-size: 15px;
+}
+
+
+/* =====================================================
+   GENERAL SECTION
+   ===================================================== */
+
+.child-health-section {
+  margin-top: 28px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+  padding: 26px;
+
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.035);
+}
+
+.child-health-section-heading {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 22px;
+}
+
+.child-health-section-heading h2 {
+  margin: 0;
+
+  font-size: 21px;
+
+  color: #1f2937;
+}
+
+.child-health-section-heading p {
+  margin: 6px 0 0;
+
+  color: #667085;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   DEVELOPMENT MILESTONES
+   ===================================================== */
+
+.child-development-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 14px;
+}
+
+.child-development-card {
+  background: #f8faf9;
+
+  border: 1px solid #e4ebe7;
+
+  border-radius: 12px;
+
+  padding: 20px;
+
+  transition: 0.2s ease;
+}
+
+.child-development-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #b9dfce;
+}
+
+.child-development-card span {
+  display: block;
+
+  width: 42px;
+  height: 42px;
+
+  margin-bottom: 13px;
+
+  border-radius: 10px;
+
+  background: #e8f7f1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+.child-development-card h3 {
+  margin: 0 0 7px;
+
+  color: #0b8457;
+
+  font-size: 16px;
+}
+
+.child-development-card p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 13px;
+
+  line-height: 1.55;
+}
+
+
+/* =====================================================
+   IMMUNIZATION
+   ===================================================== */
+
+.child-immunization-list {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.child-immunization-card {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 16px 18px;
+
+  background: #f8faf9;
+
+  border: 1px solid #e4ebe7;
+
+  border-radius: 12px;
+}
+
+.child-immunization-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+.child-immunization-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #e8f7f1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 20px;
+}
+
+.child-immunization-info h3 {
+  margin: 0;
+
+  font-size: 15px;
+
+  color: #1f2937;
+}
+
+.child-immunization-info p {
+  margin: 4px 0 0;
+
+  color: #667085;
+
+  font-size: 13px;
+}
+
+.child-immunization-status {
+  flex-shrink: 0;
+
+  padding: 6px 11px;
+
+  border-radius: 20px;
+
+  background: #e8f7f1;
+
+  color: #0b8457;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   WARNING SIGNS
+   ===================================================== */
+
+.child-warning-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+}
+
+.child-warning-card {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  padding: 16px;
+
+  background: #fff9f3;
+
+  border: 1px solid #f2dfc9;
+
+  border-radius: 12px;
+}
+
+.child-warning-card span {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  background: #fff0df;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 17px;
+}
+
+.child-warning-card p {
+  margin: 0;
+
+  color: #4b5563;
+
+  font-size: 13px;
+
+  line-height: 1.55;
+}
+
+
+/* =====================================================
+   HEALTH TIPS
+   ===================================================== */
+
+.child-health-tips {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.child-health-tip {
+  padding: 20px;
+
+  background: #f8faf9;
+
+  border: 1px solid #e4ebe7;
+
+  border-radius: 12px;
+}
+
+.child-health-tip span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-size: 26px;
+}
+
+.child-health-tip h3 {
+  margin: 0 0 7px;
+
+  color: #0b8457;
+
+  font-size: 16px;
+}
+
+.child-health-tip p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 13px;
+
+  line-height: 1.55;
+}
+
+
+/* =====================================================
+   ACTIONS
+   ===================================================== */
+
+.child-health-actions {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 20px;
+}
+
+.child-health-action-btn {
+  padding: 11px 18px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #0b8457;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.child-health-action-btn:hover {
+  background: #096f49;
+}
+
+.child-health-action-btn.secondary {
+  background: #e8f7f1;
+
+  color: #0b8457;
+}
+
+.child-health-action-btn.secondary:hover {
+  background: #d7f0e6;
+}
+
+
+/* =====================================================
+   NOTICE
+   ===================================================== */
+
+.child-health-notice {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 14px;
+
+  margin-top: 28px;
+
+  padding: 20px;
+
+  background: #eefaf5;
+
+  border: 1px solid #ccebdd;
+
+  border-radius: 14px;
+}
+
+.child-health-notice > span {
+  font-size: 23px;
+
+  flex-shrink: 0;
+}
+
+.child-health-notice h3 {
+  margin: 0 0 6px;
+
+  color: #0b8457;
+
+  font-size: 16px;
+}
+
+.child-health-notice p {
+  margin: 0;
+
+  color: #4b5563;
+
+  font-size: 13px;
+
+  line-height: 1.55;
+}
+
+
+/* =====================================================
+   BOTTOM NAVIGATION
+   ===================================================== */
+
+.child-health-bottom-nav {
+  position: fixed;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 68px;
+
+  background: white;
+
+  border-top: 1px solid #e5e7eb;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  z-index: 1000;
+
+  box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.child-health-bottom-nav button {
+  min-width: 90px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #667085;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 3px;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.child-health-bottom-nav button span {
+  font-size: 11px;
+}
+
+.child-health-bottom-nav button.active {
+  color: #0b8457;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1000px) {
+
+  .child-health-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .child-development-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 750px) {
+
+  .child-health-header {
+    padding: 16px 18px;
+  }
+
+  .child-health-header-content {
+    align-items: flex-start;
+  }
+
+  .child-health-header h1 {
+    font-size: 22px;
+  }
+
+  .child-health-main {
+    padding: 20px 15px 95px;
+  }
+
+  .child-health-intro {
+    padding: 25px;
+  }
+
+  .child-health-intro h2 {
+    font-size: 24px;
+  }
+
+  .child-health-section {
+    padding: 20px;
+  }
+
+  .child-warning-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .child-health-tips {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .child-health-back-btn {
+    width: 42px;
+    height: 42px;
+  }
+
+  .child-health-header p {
+    font-size: 13px;
+  }
+
+  .child-health-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .child-development-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .child-immunization-card {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .child-immunization-status {
+    margin-left: 56px;
+  }
+
+  .child-health-actions {
+    flex-direction: column;
+  }
+
+  .child-health-action-btn {
+    width: 100%;
+  }
+
+  .child-health-notice {
+    padding: 17px;
+  }
+
+  .child-health-bottom-nav {
+    justify-content: space-around;
+
+    gap: 0;
+  }
+
+  .child-health-bottom-nav button {
+    min-width: 0;
+
+    flex: 1;
+  }
+
+}

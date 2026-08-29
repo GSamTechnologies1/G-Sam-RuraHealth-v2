@@ -1,0 +1,871 @@
+/* =====================================================
+   G-SAM RURAHEALTH
+   KIDNEY HEALTH PAGE — MODERN UI
+   ===================================================== */
+
+.kidney-health-page {
+  min-height: 100vh;
+  background: #f3f7f5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #17211e;
+  padding-bottom: 90px;
+  overflow-x: hidden;
+}
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.kidney-health-header {
+  background: linear-gradient(135deg, #087f55 0%, #0b9b68 100%);
+  color: white;
+  padding: 18px 24px;
+  box-shadow: 0 4px 18px rgba(8, 127, 85, 0.18);
+}
+
+.kidney-health-header-content {
+  max-width: 1180px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.kidney-health-header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.kidney-health-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* =====================================================
+   BACK BUTTON
+   ===================================================== */
+
+.kidney-health-back-btn {
+  background: rgba(255, 255, 255, 0.16);
+  color: white;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+
+  padding: 9px 15px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  white-space: nowrap;
+}
+
+.kidney-health-back-btn:hover {
+  background: white;
+  color: #087f55;
+  transform: translateY(-1px);
+}
+
+/* =====================================================
+   MAIN
+   ===================================================== */
+
+.kidney-health-main {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+
+  padding: 28px 20px;
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   HERO
+   ===================================================== */
+
+.kidney-health-hero {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #f1fbf7 100%
+    );
+
+  padding: 30px;
+
+  border-radius: 20px;
+  border: 1px solid #dcebe5;
+
+  box-shadow:
+    0 8px 30px rgba(24, 63, 51, 0.07);
+}
+
+.kidney-health-hero::after {
+  content: "";
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  right: -70px;
+  top: -70px;
+
+  border-radius: 50%;
+
+  background: rgba(11, 132, 87, 0.07);
+}
+
+.kidney-health-hero-content {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.kidney-health-hero-icon {
+  width: 76px;
+  height: 76px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #dff7ed,
+    #c9f0df
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 38px;
+
+  flex-shrink: 0;
+
+  box-shadow:
+    0 8px 18px rgba(11, 132, 87, 0.12);
+}
+
+.kidney-health-hero h2 {
+  margin: 0;
+
+  font-size: 28px;
+  line-height: 1.2;
+
+  color: #087f55;
+  letter-spacing: -0.5px;
+}
+
+.kidney-health-hero p {
+  margin: 9px 0 0;
+
+  color: #66736f;
+
+  line-height: 1.65;
+  font-size: 15px;
+
+  max-width: 760px;
+}
+
+/* =====================================================
+   GENERAL SECTIONS
+   ===================================================== */
+
+.kidney-health-section {
+  background: white;
+
+  margin-top: 22px;
+  padding: 25px;
+
+  border-radius: 18px;
+  border: 1px solid #e1ebe7;
+
+  box-shadow:
+    0 5px 20px rgba(25, 60, 50, 0.045);
+}
+
+.kidney-health-section h2 {
+  margin: 0;
+
+  font-size: 21px;
+  color: #1c2925;
+  letter-spacing: -0.2px;
+}
+
+.kidney-health-section-intro {
+  margin: 7px 0 20px;
+
+  color: #74807c;
+
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* =====================================================
+   TOPIC GRID
+   ===================================================== */
+
+.kidney-health-topic-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+.kidney-health-topic-card {
+  background: #fbfdfc;
+
+  border: 1px solid #e3ece8;
+  border-radius: 15px;
+
+  padding: 20px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.kidney-health-topic-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #b8ded0;
+
+  box-shadow:
+    0 8px 20px rgba(11, 132, 87, 0.08);
+}
+
+.kidney-health-topic-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e8f7f1;
+
+  border-radius: 13px;
+
+  font-size: 25px;
+
+  margin-bottom: 14px;
+}
+
+.kidney-health-topic-card h3 {
+  margin: 0 0 8px;
+
+  font-size: 16px;
+  color: #1c2925;
+}
+
+.kidney-health-topic-card p {
+  margin: 0;
+
+  color: #6d7975;
+
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+/* =====================================================
+   WARNING SIGNS
+   ===================================================== */
+
+.kidney-health-warning-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.kidney-health-warning-item {
+  display: flex;
+
+  align-items: flex-start;
+  gap: 12px;
+
+  padding: 14px 16px;
+
+  background: #fffaf2;
+
+  border: 1px solid #f3e1c4;
+
+  border-radius: 12px;
+}
+
+.kidney-health-warning-item span {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff0d6;
+
+  font-size: 16px;
+
+  flex-shrink: 0;
+}
+
+.kidney-health-warning-item p {
+  margin: 2px 0 0;
+
+  color: #59645f;
+
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* =====================================================
+   RISK FACTORS
+   ===================================================== */
+
+.kidney-health-risk-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+.kidney-health-risk-card {
+  position: relative;
+
+  padding: 18px;
+
+  background: #f8fbfa;
+
+  border: 1px solid #e2ebe7;
+  border-radius: 14px;
+
+  transition: 0.2s ease;
+}
+
+.kidney-health-risk-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 18px rgba(20, 70, 55, 0.06);
+}
+
+.kidney-health-risk-card h3 {
+  margin: 0 0 7px;
+
+  font-size: 16px;
+  color: #1d2925;
+}
+
+.kidney-health-risk-card p {
+  margin: 0;
+
+  color: #707c78;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   PREVENTION
+   ===================================================== */
+
+.kidney-health-prevention-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+.kidney-health-prevention-card {
+  display: flex;
+
+  align-items: flex-start;
+  gap: 14px;
+
+  padding: 18px;
+
+  background: #fbfdfc;
+
+  border: 1px solid #e2ebe7;
+
+  border-radius: 14px;
+
+  transition: 0.2s ease;
+}
+
+.kidney-health-prevention-card:hover {
+  border-color: #b9ddd0;
+
+  box-shadow:
+    0 6px 18px rgba(11, 132, 87, 0.06);
+}
+
+.kidney-health-prevention-icon {
+  width: 46px;
+  height: 46px;
+
+  border-radius: 12px;
+
+  background: #e5f7ef;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+
+  flex-shrink: 0;
+}
+
+.kidney-health-prevention-card h3 {
+  margin: 1px 0 6px;
+
+  font-size: 16px;
+  color: #1d2925;
+}
+
+.kidney-health-prevention-card p {
+  margin: 0;
+
+  color: #6f7b77;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   HEALTH CHECK
+   ===================================================== */
+
+.kidney-health-check {
+  background:
+    linear-gradient(
+      135deg,
+      #eef9f4,
+      #f7fcfa
+    );
+
+  border: 1px solid #cfe6dc;
+
+  border-radius: 15px;
+
+  padding: 22px;
+}
+
+.kidney-health-check h3 {
+  margin: 0 0 8px;
+
+  color: #087f55;
+
+  font-size: 18px;
+}
+
+.kidney-health-check p {
+  margin: 0;
+
+  color: #60706a;
+
+  line-height: 1.65;
+  font-size: 14px;
+}
+
+/* =====================================================
+   CALL TO ACTION
+   ===================================================== */
+
+.kidney-health-action {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #087f55,
+      #0b9b68
+    );
+
+  color: white;
+
+  margin-top: 22px;
+
+  padding: 26px;
+
+  border-radius: 18px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  box-shadow:
+    0 8px 25px rgba(8, 127, 85, 0.16);
+}
+
+.kidney-health-action h2 {
+  margin: 0;
+
+  font-size: 20px;
+}
+
+.kidney-health-action p {
+  margin: 7px 0 0;
+
+  color: #dff7ed;
+
+  line-height: 1.55;
+  font-size: 14px;
+}
+
+.kidney-health-action button {
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 12px 19px;
+
+  background: white;
+
+  color: #087f55;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition: 0.2s ease;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.kidney-health-action button:hover {
+  transform: translateY(-2px);
+
+  background: #f1fbf7;
+}
+
+/* =====================================================
+   HEALTH NOTICE
+   ===================================================== */
+
+.kidney-health-notice {
+  margin-top: 22px;
+
+  padding: 18px;
+
+  display: flex;
+
+  align-items: flex-start;
+  gap: 13px;
+
+  background: #fffaf2;
+
+  border: 1px solid #f1dfc1;
+
+  border-radius: 14px;
+}
+
+.kidney-health-notice-icon {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+
+  background: #fff0d5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+
+  flex-shrink: 0;
+}
+
+.kidney-health-notice p {
+  margin: 1px 0 0;
+
+  color: #68746f;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+/* =====================================================
+   BOTTOM NAVIGATION
+   ===================================================== */
+
+.kidney-health-bottom-nav {
+  position: fixed;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 100;
+
+  height: 70px;
+
+  background: rgba(255, 255, 255, 0.97);
+
+  border-top: 1px solid #dfe9e5;
+
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  align-items: center;
+
+  box-shadow:
+    0 -5px 20px rgba(20, 50, 40, 0.08);
+
+  backdrop-filter: blur(10px);
+}
+
+.kidney-health-bottom-nav button {
+  height: 100%;
+
+  border: none;
+
+  background: transparent;
+
+  color: #7a8782;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+
+  cursor: pointer;
+
+  font-size: 19px;
+
+  transition: 0.2s ease;
+}
+
+.kidney-health-bottom-nav button span {
+  font-size: 10px;
+
+  white-space: nowrap;
+}
+
+.kidney-health-bottom-nav button.active {
+  color: #087f55;
+
+  font-weight: 700;
+}
+
+.kidney-health-bottom-nav button:hover {
+  color: #087f55;
+}
+
+/* =====================================================
+   RESPONSIVE — TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+  .kidney-health-topic-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kidney-health-risk-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kidney-health-prevention-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE — MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+  .kidney-health-page {
+    padding-bottom: 82px;
+  }
+
+  .kidney-health-header {
+    padding: 16px;
+  }
+
+  .kidney-health-header-content {
+    gap: 12px;
+  }
+
+  .kidney-health-header h1 {
+    font-size: 21px;
+  }
+
+  .kidney-health-header p {
+    font-size: 13px;
+  }
+
+  .kidney-health-back-btn {
+    padding: 8px 11px;
+    font-size: 12px;
+  }
+
+  .kidney-health-main {
+    padding: 18px 14px;
+  }
+
+  /* HERO */
+
+  .kidney-health-hero {
+    padding: 21px;
+
+    border-radius: 17px;
+  }
+
+  .kidney-health-hero-content {
+    align-items: flex-start;
+
+    gap: 14px;
+  }
+
+  .kidney-health-hero-icon {
+    width: 56px;
+    height: 56px;
+
+    border-radius: 15px;
+
+    font-size: 28px;
+  }
+
+  .kidney-health-hero h2 {
+    font-size: 21px;
+  }
+
+  .kidney-health-hero p {
+    font-size: 13px;
+
+    line-height: 1.55;
+  }
+
+  /* SECTIONS */
+
+  .kidney-health-section {
+    margin-top: 17px;
+
+    padding: 18px;
+
+    border-radius: 15px;
+  }
+
+  .kidney-health-section h2 {
+    font-size: 19px;
+  }
+
+  .kidney-health-section-intro {
+    font-size: 13px;
+  }
+
+  /* TOPICS */
+
+  .kidney-health-topic-grid {
+    grid-template-columns: 1fr;
+
+    gap: 11px;
+  }
+
+  .kidney-health-topic-card {
+    padding: 17px;
+  }
+
+  /* RISK */
+
+  .kidney-health-risk-grid {
+    grid-template-columns: 1fr;
+
+    gap: 11px;
+  }
+
+  /* PREVENTION */
+
+  .kidney-health-prevention-grid {
+    grid-template-columns: 1fr;
+
+    gap: 11px;
+  }
+
+  /* CTA */
+
+  .kidney-health-action {
+    margin-top: 17px;
+
+    padding: 21px;
+
+    border-radius: 16px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .kidney-health-action h2 {
+    font-size: 18px;
+  }
+
+  .kidney-health-action p {
+    font-size: 13px;
+  }
+
+  .kidney-health-action button {
+    width: 100%;
+
+    padding: 12px;
+  }
+
+  /* NOTICE */
+
+  .kidney-health-notice {
+    margin-top: 17px;
+
+    padding: 16px;
+  }
+
+  /* BOTTOM NAV */
+
+  .kidney-health-bottom-nav {
+    height: 66px;
+  }
+
+  .kidney-health-bottom-nav button {
+    font-size: 18px;
+  }
+
+  .kidney-health-bottom-nav button span {
+    font-size: 9px;
+  }
+}

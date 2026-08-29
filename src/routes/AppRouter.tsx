@@ -18,14 +18,19 @@ import Consultation from "../pages/Consultation";
 import AdminDashboard from "../pages/AdminDashboard";
 import CitizenDashboard from "../pages/CitizenDashboard";
 import Appointments from "../pages/Appointments";
-
+import Immunization from "../pages/Immunization";
 import Breastfeeding from "../features/health/Breastfeeding";
 import BreastCancerAwareness from "../features/health/breast-cancer/Breast-CancerAwareness";
-
+import AntenatalCare from "../pages/AntenatalCare";
 import HealthCentres from "../pages/HealthCentres";
 import Emergency from "../pages/Emergency";
 import Notifications from "../pages/Notifications";
 import HealthRecords from "../pages/HealthRecords";
+import KidneyHealth from "../pages/KidneyHealth";
+import CardiacArrest from "../pages/CardiacArrest";
+import Referrals from "../pages/Referral";
+import Profile from "../pages/Profile";
+import ChildHealth from "../pages/ChildHealth";
 
 // ===============================
 // LANGUAGE & ONBOARDING
@@ -38,7 +43,6 @@ import Onboarding from "../features/onboarding/Onboarding";
 // ===============================
 import AuthPage from "../features/auth/AuthPage";
 import Register from "../features/auth/Register";
-import Login from "../features/auth/Login";
 
 // ===============================
 // CITIZEN FEATURES
@@ -95,9 +99,9 @@ function AppRouter() {
         />
 
         <Route
-          path="/sign-in"
-          element={<Login />}
-        />
+  path="/sign-in"
+  element={<AuthPage />}
+/>
 
         {/* =====================================
             CITIZEN DASHBOARD
@@ -106,6 +110,16 @@ function AppRouter() {
           path="/citizen-dashboard"
           element={<CitizenDashboard />}
         />
+
+<Route
+  path="/immunization"
+  element={<Immunization />}
+/>
+
+<Route
+  path="/cardiac-arrest"
+  element={<CardiacArrest />}
+/>
 
         {/* =====================================
             CITIZEN HOME
@@ -151,7 +165,31 @@ function AppRouter() {
           element={<HealthCentres />}
         />
 
-        {/* =====================================
+        <Route
+  path="/health-education/kidney-health"
+  element={<KidneyHealth />}
+/>
+
+<Route 
+  path="/referrals" 
+  element={<Referrals />} 
+/>
+
+<Route
+  path="/profile"
+  element={<Profile />}
+/>
+
+<Route
+  path="/antenatal"
+  element={<AntenatalCare />}
+/>
+
+<Route
+  path="/child-health"
+  element={<ChildHealth />}
+  />
+          {/* =====================================
             STAFF AUTHENTICATION
         ===================================== */}
         <Route

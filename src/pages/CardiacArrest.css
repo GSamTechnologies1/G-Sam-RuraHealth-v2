@@ -1,0 +1,613 @@
+/* =====================================================
+   G-SAM RURAHEALTH
+   CARDIAC ARREST PAGE
+   ===================================================== */
+
+.cardiac-arrest-page {
+  min-height: 100vh;
+  background: #f4f7f6;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  padding-bottom: 90px;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.cardiac-arrest-header {
+  background: #0b8457;
+  color: white;
+  padding: 20px 30px;
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.cardiac-arrest-header-content {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.cardiac-arrest-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.cardiac-arrest-header p {
+  margin: 6px 0 0;
+  font-size: 16px;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   BACK BUTTON
+   ===================================================== */
+
+.cardiac-arrest-back-btn {
+  background: white;
+  color: #0b8457;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 10px 18px;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+  flex-shrink: 0;
+}
+
+.cardiac-arrest-back-btn:hover {
+  transform: translateY(-1px);
+  background: #eefaf5;
+}
+
+
+/* =====================================================
+   MAIN
+   ===================================================== */
+
+.cardiac-arrest-main {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 30px 20px;
+}
+
+
+/* =====================================================
+   EMERGENCY ALERT
+   ===================================================== */
+
+.cardiac-emergency-alert {
+  background: #fff1f1;
+
+  border: 1px solid #f3caca;
+
+  border-left: 5px solid #dc2626;
+
+  border-radius: 14px;
+
+  padding: 25px;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 18px;
+}
+
+.cardiac-alert-icon {
+  width: 55px;
+  height: 55px;
+
+  border-radius: 12px;
+
+  background: #fee2e2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+
+  flex-shrink: 0;
+}
+
+.cardiac-emergency-alert h2 {
+  margin: 0;
+
+  font-size: 22px;
+
+  color: #b91c1c;
+}
+
+.cardiac-emergency-alert p {
+  margin: 8px 0 18px;
+
+  color: #5f6368;
+
+  line-height: 1.6;
+}
+
+.cardiac-emergency-alert button {
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 11px 18px;
+
+  background: #dc2626;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.cardiac-emergency-alert button:hover {
+  background: #b91c1c;
+}
+
+
+/* =====================================================
+   GENERAL SECTIONS
+   ===================================================== */
+
+.cardiac-arrest-section {
+  background: white;
+
+  margin-top: 30px;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  font-size: 22px;
+}
+
+.section-heading p {
+  margin: 6px 0 20px;
+
+  color: #6b7280;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   WARNING SIGNS
+   ===================================================== */
+
+.cardiac-warning-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.cardiac-warning-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 15px;
+
+  background: #fff8ed;
+
+  border: 1px solid #f3dfbf;
+
+  border-radius: 10px;
+}
+
+.cardiac-warning-card span {
+  font-size: 21px;
+
+  flex-shrink: 0;
+}
+
+.cardiac-warning-card p {
+  margin: 0;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   EMERGENCY STEPS
+   ===================================================== */
+
+.cardiac-steps-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.cardiac-step-card {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 16px;
+
+  padding: 18px;
+
+  background: #f8faf9;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+}
+
+.cardiac-step-number {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  background: #0b8457;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  flex-shrink: 0;
+}
+
+.cardiac-step-card h3 {
+  margin: 0 0 7px;
+
+  font-size: 17px;
+
+  color: #1f2937;
+}
+
+.cardiac-step-card p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   CPR CARD
+   ===================================================== */
+
+.cardiac-cpr-card {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+  padding: 22px;
+
+  background: #eef6f3;
+
+  border: 1px solid #d5e7e1;
+
+  border-radius: 12px;
+}
+
+.cardiac-cpr-icon {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 12px;
+
+  background: #dff3eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 27px;
+
+  flex-shrink: 0;
+}
+
+.cardiac-cpr-card h2 {
+  margin: 0 0 8px;
+
+  color: #0b8457;
+
+  font-size: 20px;
+}
+
+.cardiac-cpr-card p {
+  margin: 0 0 10px;
+
+  color: #5f6f69;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+.cardiac-cpr-card p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =====================================================
+   AED CARD
+   ===================================================== */
+
+.cardiac-aed-card {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+  padding: 22px;
+
+  background: #f8faf9;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+}
+
+.cardiac-aed-icon {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 12px;
+
+  background: #fff3d9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 27px;
+
+  flex-shrink: 0;
+}
+
+.cardiac-aed-card h2 {
+  margin: 0 0 8px;
+
+  font-size: 20px;
+
+  color: #1f2937;
+}
+
+.cardiac-aed-card p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   IMPORTANT NOTICE
+   ===================================================== */
+
+.cardiac-arrest-notice {
+  margin-top: 30px;
+
+  padding: 20px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 14px;
+
+  background: #fff8ed;
+
+  border: 1px solid #f3dfbf;
+
+  border-radius: 12px;
+}
+
+.cardiac-arrest-notice > span {
+  font-size: 22px;
+
+  flex-shrink: 0;
+}
+
+.cardiac-arrest-notice h3 {
+  margin: 0 0 6px;
+
+  font-size: 17px;
+
+  color: #374151;
+}
+
+.cardiac-arrest-notice p {
+  margin: 0;
+
+  color: #64736e;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   BOTTOM NAVIGATION
+   ===================================================== */
+
+.cardiac-arrest-bottom-nav {
+  position: fixed;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 100;
+
+  height: 72px;
+
+  background: white;
+
+  border-top: 1px solid #dfe9e5;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, 1fr);
+
+  align-items: center;
+}
+
+.cardiac-arrest-bottom-nav button {
+  height: 100%;
+
+  border: none;
+
+  background: transparent;
+
+  color: #71807b;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 3px;
+
+  cursor: pointer;
+
+  font-size: 19px;
+}
+
+.cardiac-arrest-bottom-nav button span {
+  font-size: 11px;
+}
+
+.cardiac-arrest-bottom-nav button.active {
+  color: #0b8457;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+  .cardiac-arrest-main {
+    padding: 25px 18px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .cardiac-arrest-header {
+    padding: 18px;
+  }
+
+  .cardiac-arrest-header-content {
+    align-items: flex-start;
+
+    gap: 12px;
+  }
+
+  .cardiac-arrest-header h1 {
+    font-size: 22px;
+  }
+
+  .cardiac-arrest-header p {
+    font-size: 14px;
+  }
+
+  .cardiac-arrest-main {
+    padding: 20px 15px;
+  }
+
+  .cardiac-emergency-alert {
+    padding: 20px;
+
+    flex-direction: column;
+  }
+
+  .cardiac-arrest-section {
+    padding: 20px;
+  }
+
+  .cardiac-step-card {
+    padding: 15px;
+  }
+
+  .cardiac-cpr-card {
+    padding: 18px;
+
+    flex-direction: column;
+  }
+
+  .cardiac-aed-card {
+    padding: 18px;
+
+    flex-direction: column;
+  }
+
+  .cardiac-arrest-notice {
+    padding: 18px;
+  }
+
+  .cardiac-arrest-bottom-nav {
+    height: 68px;
+  }
+
+}
