@@ -1,470 +1,2151 @@
 * {
+
   box-sizing: border-box;
+
 }
+
+
 
 .notifications-page {
+
   min-height: 100vh;
-  background: linear-gradient(135deg, #fffafa 0%, #ffffff 48%, #fff3f3 100%);
-  color: #4a1717;
+
   padding-bottom: 110px;
+
+  background: linear-gradient(
+
+    135deg,
+
+    #fffafa 0%,
+
+    #ffffff 48%,
+
+    #fff3f3 100%
+
+  );
+
+  color: #4a1717;
+
+  font-family: Arial, sans-serif;
+
 }
+
+
 
 .notifications-header,
+
 .notifications-main {
+
   width: min(980px, calc(100% - 32px));
+
   margin: 0 auto;
+
 }
+
+
 
 .notifications-header {
+
   display: flex;
+
   align-items: center;
+
   gap: 16px;
+
   padding: 28px 0 20px;
+
 }
+
+
 
 .notifications-back-btn {
+
   width: 46px;
+
   height: 46px;
+
   border: 1px solid #f2d1d1;
+
   border-radius: 14px;
-  background: #fff;
+
+  background: #ffffff;
+
   color: #b01818;
+
   font-size: 24px;
+
   cursor: pointer;
+
   box-shadow: 0 5px 18px rgba(139, 20, 20, 0.07);
+
 }
+
+
+
+.notifications-back-btn:hover {
+
+  background: #fff1f1;
+
+}
+
+
 
 .notifications-header-text {
+
   flex: 1;
+
 }
+
+
 
 .notifications-header h1 {
+
   margin: 0;
+
   color: #9f1717;
+
   font-size: 30px;
+
   line-height: 1.1;
+
 }
+
+
 
 .notifications-header p {
+
   margin: 6px 0 0;
+
   color: #7d6262;
+
   font-size: 14px;
+
+  line-height: 1.5;
+
 }
+
+
 
 .notifications-header-icon {
-  width: 50px;
-  height: 50px;
+
   display: grid;
+
+  width: 50px;
+
+  height: 50px;
+
   place-items: center;
+
   border-radius: 15px;
+
   background: #fff0f0;
+
   font-size: 25px;
+
 }
+
+
 
 .notifications-summary {
+
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
+
+  justify-content: space-between;
+
   gap: 24px;
+
   padding: 24px;
-  background: #fff;
+
   border: 1px solid #f0d0d0;
+
   border-radius: 20px;
+
+  background: #ffffff;
+
   box-shadow: 0 12px 30px rgba(120, 20, 20, 0.07);
+
 }
+
+
 
 .notifications-eyebrow {
+
   color: #b01818;
+
   font-size: 11px;
+
   font-weight: 800;
+
   letter-spacing: 0.12em;
+
 }
+
+
 
 .notifications-summary h2 {
-  margin: 5px 0 5px;
-  font-size: 25px;
+
+  margin: 5px 0;
+
   color: #651414;
+
+  font-size: 25px;
+
 }
+
+
 
 .notifications-summary p {
+
   max-width: 680px;
+
   margin: 0;
+
   color: #766060;
-  line-height: 1.55;
+
   font-size: 14px;
+
+  line-height: 1.55;
+
 }
+
+
 
 .unread-counter {
+
   min-width: 92px;
+
   padding: 13px 15px;
+
   border-radius: 16px;
+
   background: #fff0f0;
+
   text-align: center;
+
 }
+
+
 
 .unread-counter strong {
+
   display: block;
+
   color: #b01818;
+
   font-size: 27px;
+
 }
+
+
 
 .unread-counter span {
+
   color: #7d5050;
+
   font-size: 11px;
+
   font-weight: 700;
+
 }
+
+
+
+/* Patient reminders */
+
+
+
+.patient-reminders {
+
+  margin-top: 22px;
+
+  margin-bottom: 24px;
+
+  padding: 22px;
+
+  border: 1px solid #cde7dc;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  box-shadow: 0 8px 24px rgba(12, 90, 62, 0.05);
+
+}
+
+
+
+.patient-reminders-header {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 16px;
+
+  margin-bottom: 18px;
+
+}
+
+
+
+.patient-reminders-header h2 {
+
+  margin: 7px 0;
+
+  color: #155b45;
+
+  font-size: 23px;
+
+}
+
+
+
+.patient-reminders-header p {
+
+  margin: 0;
+
+  color: #687b73;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+}
+
+
+
+.patient-reminders .notifications-eyebrow {
+
+  color: #087f63;
+
+}
+
+
+
+.add-reminder-btn,
+
+.save-reminder-btn {
+
+  min-height: 42px;
+
+  padding: 0 16px;
+
+  border: 0;
+
+  border-radius: 10px;
+
+  background: #087f63;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: *background* 0.2s ease;
+
+}
+
+
+
+.add-reminder-btn:hover,
+
+.save-reminder-btn:hover {
+
+  background: #06674f;
+
+}
+
+
+
+.reminder-summary-row {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+
+}
+
+
+
+.reminder-summary-item {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  padding: 14px;
+
+  border: 1px solid #e0eee7;
+
+  border-radius: 12px;
+
+  background: #f5fbf7;
+
+}
+
+
+
+.reminder-summary-item strong {
+
+  color: #087f63;
+
+  font-size: 24px;
+
+}
+
+
+
+.reminder-summary-item span {
+
+  color: #61766a;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+
+}
+
+
+
+.reminder-form {
+
+  display: grid;
+
+  gap: 14px;
+
+  margin-bottom: 20px;
+
+  padding: 18px;
+
+  border: 1px solid #dcebe4;
+
+  border-radius: 14px;
+
+  background: #f7fbf9;
+
+}
+
+
+
+.reminder-form h3 {
+
+  margin: 0 0 4px;
+
+  color: #155b45;
+
+  font-size: 18px;
+
+}
+
+
+
+.reminder-form label {
+
+  display: grid;
+
+  gap: 7px;
+
+  color: #315d4c;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+}
+
+
+
+.reminder-form input,
+
+.reminder-form select,
+
+.reminder-form textarea {
+
+  width: 100%;
+
+  min-height: 42px;
+
+  padding: 10px 12px;
+
+  border: 1px solid #cfdfd7;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #263f34;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+}
+
+
+
+.reminder-form input:focus,
+
+.reminder-form select:focus,
+
+.reminder-form textarea:focus {
+
+  border-color: #087f63;
+
+  box-shadow: 0 0 0 3px rgba(8, 127, 99, 0.1);
+
+}
+
+
+
+.reminder-form textarea {
+
+  resize: vertical;
+
+  line-height: 1.6;
+
+}
+
+
+
+.reminder-form-row {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+
+}
+
+
+
+.reminder-form-note {
+
+  margin: 0;
+
+  padding: 10px 12px;
+
+  border-radius: 8px;
+
+  background: #fff8e8;
+
+  color: #80622b;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+}
+
+
+
+.save-reminder-btn {
+
+  width: 100%;
+
+  min-height: 46px;
+
+}
+
+
+
+.reminders-empty {
+
+  padding: 28px 15px;
+
+  border: 1px dashed #cde1d7;
+
+  border-radius: 12px;
+
+  background: #fbfefd;
+
+  text-align: center;
+
+  color: #64796f;
+
+}
+
+
+
+.reminders-empty > span {
+
+  font-size: 34px;
+
+}
+
+
+
+.reminders-empty h3 {
+
+  margin: 10px 0 6px;
+
+  color: #315d4c;
+
+  font-size: 16px;
+
+}
+
+
+
+.reminders-empty p {
+
+  margin: 0;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+}
+
+
+
+.patient-reminders-list {
+
+  display: grid;
+
+  gap: 12px;
+
+}
+
+
+
+.patient-reminder-card {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+
+  padding: 15px;
+
+  border: 1px solid #dfebe5;
+
+  border-radius: 13px;
+
+  background: #fbfefd;
+
+  transition:
+
+    border-color 0.2s ease,
+
+    box-shadow 0.2s ease;
+
+}
+
+
+
+.patient-reminder-card:hover {
+
+  border-color: #b7d9c9;
+
+  box-shadow: 0 5px 15px rgba(12, 90, 62, 0.05);
+
+}
+
+
+
+.patient-reminder-icon {
+
+  display: grid;
+
+  flex-shrink: 0;
+
+  width: 43px;
+
+  height: 43px;
+
+  place-items: center;
+
+  border-radius: 12px;
+
+  background: #e9f6ef;
+
+  font-size: 22px;
+
+}
+
+
+
+.patient-reminder-content {
+
+  min-width: 0;
+
+  flex: 1;
+
+}
+
+
+
+.reminder-title-row {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 5px;
+
+}
+
+
+
+.reminder-category {
+
+  color: #087f63;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+
+}
+
+
+
+.reminder-status {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 4px 8px;
+
+  border-radius: 20px;
+
+  background: #eaf5ed;
+
+  color: #39734d;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+}
+
+
+
+.reminder-status.due {
+
+  background: #fff0e7;
+
+  color: #b64c16;
+
+}
+
+
+
+.reminder-status.completed {
+
+  background: #e0f5e8;
+
+  color: #087f45;
+
+}
+
+
+
+.patient-reminder-content h3 {
+
+  margin: 0 0 6px;
+
+  color: #245541;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+
+}
+
+
+
+.patient-reminder-content > p {
+
+  margin: 0 0 9px;
+
+  color: #63766b;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  overflow-wrap: anywhere;
+
+}
+
+
+
+.reminder-date-time {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px 14px;
+
+  margin-top: 8px;
+
+}
+
+
+
+.reminder-date-time span {
+
+  color: #7d8c83;
+
+  font-size: 11px;
+
+}
+
+
+
+.patient-reminder-actions {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 12px;
+
+}
+
+
+
+.patient-reminder-actions button {
+
+  min-height: 32px;
+
+  padding: 7px 10px;
+
+  border: 1px solid #cde3d7;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #087451;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+}
+
+
+
+.patient-reminder-actions button:hover {
+
+  background: #f0faf4;
+
+}
+
+
+
+.patient-reminder-actions .delete-reminder-btn {
+
+  border-color: #eed1d1;
+
+  color: #a91515;
+
+}
+
+
+
+.patient-reminder-actions .delete-reminder-btn:hover {
+
+  background: #fff3f3;
+
+}
+
+
+
+.notification-permission-btn {
+
+  width: 100%;
+
+  min-height: 43px;
+
+  margin-top: 16px;
+
+  border: 1px solid #cde3d7;
+
+  border-radius: 10px;
+
+  background: #f5fbf7;
+
+  color: #176448;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+}
+
+
+
+.notification-permission-btn:hover {
+
+  background: #eaf7ef;
+
+}
+
+
+
+.reminder-browser-note {
+
+  margin: 10px 0 0;
+
+  color: #7a8b81;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+
+  text-align: center;
+
+}
+
+
+
+/* Notification filters */
+
+
 
 .notifications-toolbar {
+
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
+
+  justify-content: space-between;
+
   gap: 14px;
+
   margin: 22px 0 14px;
+
 }
+
+
 
 .notification-filters {
+
   display: flex;
+
   gap: 8px;
+
 }
+
+
 
 .filter-btn,
+
 .mark-all-btn {
-  border: 1px solid #edcccc;
-  background: #fff;
-  border-radius: 11px;
+
   min-height: 42px;
+
   padding: 0 15px;
+
+  border: 1px solid #edcccc;
+
+  border-radius: 11px;
+
+  background: #ffffff;
+
   color: #6e4141;
+
+  font-size: 12px;
+
   font-weight: 700;
+
   cursor: pointer;
+
 }
+
+
 
 .filter-btn {
+
   display: flex;
+
   align-items: center;
+
   gap: 8px;
+
 }
+
+
 
 .filter-btn span {
+
   min-width: 21px;
+
   padding: 2px 6px;
+
   border-radius: 20px;
+
   background: #f8e6e6;
+
   font-size: 11px;
+
+  text-align: center;
+
 }
+
+
 
 .filter-btn.active {
-  background: #a91515;
-  color: #fff;
+
   border-color: #a91515;
+
+  background: #a91515;
+
+  color: #ffffff;
+
 }
+
+
 
 .filter-btn.active span {
+
   background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+
+  color: #ffffff;
+
 }
+
+
 
 .mark-all-btn {
+
   color: #a91515;
+
 }
+
+
+
+.mark-all-btn:hover:not(:disabled) {
+
+  background: #fff4f4;
+
+}
+
+
 
 .mark-all-btn:disabled {
+
   opacity: 0.45;
+
   cursor: not-allowed;
+
 }
+
+
+
+/* General notification cards */
+
+
 
 .notifications-list {
+
   display: grid;
+
   gap: 12px;
+
 }
+
+
 
 .notification-card {
-  border: 1px solid #efd3d3;
-  border-radius: 17px;
-  background: #fff;
+
   overflow: hidden;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+
+  border: 1px solid #efd3d3;
+
+  border-radius: 17px;
+
+  background: #ffffff;
+
+  transition:
+
+    transform 0.18s ease,
+
+    box-shadow 0.18s ease;
+
 }
+
+
 
 .notification-card:hover {
+
   transform: translateY(-1px);
+
   box-shadow: 0 8px 24px rgba(120, 20, 20, 0.07);
+
 }
+
+
 
 .notification-card.is-unread {
+
   border-left: 4px solid #b01818;
+
 }
+
+
 
 .notification-card.critical {
+
   background: #fff9f9;
+
 }
+
+
 
 .notification-card-button {
-  width: 100%;
-  border: 0;
-  background: transparent;
-  padding: 18px;
+
   display: grid;
-  grid-template-columns: 48px 1fr 20px;
+
+  width: 100%;
+
+  grid-template-columns: 48px minmax(0, 1fr) 20px;
+
+  align-items: center;
+
   gap: 15px;
-  text-align: left;
-  cursor: pointer;
+
+  padding: 18px;
+
+  border: 0;
+
+  background: transparent;
+
   color: inherit;
+
+  text-align: left;
+
+  cursor: pointer;
+
 }
+
+
+
+.notification-card-button:focus-visible,
+
+.notifications-bottom-nav button:focus-visible,
+
+.patient-reminder-actions button:focus-visible {
+
+  outline: 2px solid #087f63;
+
+  outline-offset: 3px;
+
+}
+
+
 
 .notification-icon {
-  width: 48px;
-  height: 48px;
+
   display: grid;
+
+  width: 48px;
+
+  height: 48px;
+
   place-items: center;
+
   border-radius: 14px;
+
   background: #fff1f1;
+
   font-size: 23px;
+
 }
+
+
 
 .notification-content {
+
   min-width: 0;
+
 }
+
+
 
 .notification-top-row,
+
 .notification-bottom-row {
+
   display: flex;
+
   align-items: center;
+
   gap: 10px;
+
 }
+
+
 
 .notification-top-row {
+
   min-height: 18px;
+
 }
+
+
 
 .notification-category {
+
   color: #a91515;
+
   font-size: 11px;
+
   font-weight: 800;
-  text-transform: uppercase;
+
   letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+
 }
+
+
 
 .unread-dot {
+
   width: 8px;
+
   height: 8px;
+
   border-radius: 50%;
+
   background: #c51616;
+
 }
+
+
 
 .notification-content h3 {
+
   margin: 4px 0 5px;
+
   color: #4f1a1a;
+
   font-size: 17px;
+
+  line-height: 1.45;
+
 }
+
+
 
 .notification-content p {
+
   margin: 0;
+
   color: #735f5f;
-  line-height: 1.5;
+
   font-size: 13px;
+
+  line-height: 1.5;
+
 }
+
+
 
 .notification-bottom-row {
+
+  flex-wrap: wrap;
+
   margin-top: 9px;
-  font-size: 11px;
+
   color: #927777;
+
+  font-size: 11px;
+
 }
+
+
 
 .priority-label {
+
   padding: 3px 8px;
+
   border-radius: 20px;
+
   background: #fff0d6;
+
   color: #8b5b00;
+
   font-weight: 800;
+
 }
+
+
 
 .notification-arrow {
+
   align-self: center;
+
   color: #b01818;
+
   font-size: 28px;
+
   font-weight: 300;
+
 }
+
+
 
 .notifications-empty {
-  padding: 55px 20px;
-  text-align: center;
+
+  padding: 45px 20px;
+
   border: 1px dashed #e7c8c8;
+
   border-radius: 18px;
+
   background: rgba(255, 255, 255, 0.75);
+
+  text-align: center;
+
 }
+
+
 
 .notifications-empty > div {
+
   font-size: 38px;
+
 }
+
+
 
 .notifications-empty h3 {
+
   margin: 10px 0 4px;
+
   color: #641616;
+
 }
+
+
 
 .notifications-empty p {
+
   margin: 0;
+
   color: #8b7070;
+
+  font-size: 13px;
+
 }
+
+
+
+/* Roadmap notice */
+
+
 
 .notification-roadmap {
+
   display: flex;
+
   gap: 14px;
+
   margin-top: 20px;
+
   padding: 18px;
+
   border: 1px solid #ead6aa;
+
   border-radius: 16px;
+
   background: #fffaf0;
+
 }
+
+
 
 .roadmap-icon {
+
+  flex-shrink: 0;
+
   font-size: 24px;
+
 }
+
+
 
 .notification-roadmap h3 {
+
   margin: 0 0 4px;
-  font-size: 15px;
+
   color: #765000;
+
+  font-size: 15px;
+
 }
+
+
 
 .notification-roadmap p {
+
   margin: 0;
+
   color: #806f4d;
+
   font-size: 12px;
-  line-height: 1.5;
+
+  line-height: 1.6;
+
 }
+
+
+
+/* Bottom navigation */
+
+
 
 .notifications-bottom-nav {
+
   position: fixed;
+
   z-index: 20;
-  left: 50%;
+
   bottom: 14px;
-  transform: translateX(-50%);
-  width: min(560px, calc(100% - 24px));
-  padding: 9px;
+
+  left: 50%;
+
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+
+  width: min(560px, calc(100% - 24px));
+
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
   gap: 5px;
+
+  padding: 9px;
+
+  transform: translateX(-50%);
+
   border: 1px solid #ead4d4;
+
   border-radius: 18px;
+
   background: rgba(255, 255, 255, 0.97);
+
   box-shadow: 0 12px 35px rgba(70, 15, 15, 0.14);
+
   backdrop-filter: blur(12px);
+
 }
+
+
 
 .notifications-bottom-nav button {
+
   position: relative;
-  min-height: 58px;
-  border: 0;
-  border-radius: 12px;
-  background: transparent;
-  color: #795e5e;
+
   display: flex;
+
+  min-width: 0;
+
+  min-height: 58px;
+
   flex-direction: column;
-  justify-content: center;
+
   align-items: center;
+
+  justify-content: center;
+
   gap: 3px;
+
+  border: 0;
+
+  border-radius: 12px;
+
+  background: transparent;
+
+  color: #795e5e;
+
   font-size: 18px;
+
   cursor: pointer;
+
 }
+
+
 
 .notifications-bottom-nav button span {
+
   font-size: 10px;
+
   font-weight: 700;
+
 }
+
+
 
 .notifications-bottom-nav button.active {
+
   background: #fff0f0;
+
   color: #a91515;
+
 }
+
+
 
 .notifications-bottom-nav button b {
+
   position: absolute;
+
   top: 5px;
+
   right: calc(50% - 22px);
-  min-width: 17px;
-  height: 17px;
-  padding: 0 4px;
+
   display: grid;
+
+  min-width: 17px;
+
+  height: 17px;
+
   place-items: center;
+
+  padding: 0 4px;
+
   border-radius: 50%;
+
   background: #b01818;
-  color: #fff;
+
+  color: #ffffff;
+
   font-size: 9px;
+
 }
 
+
+
+/* Responsive layout */
+
+
+
 @media (max-width: 680px) {
+
   .notifications-header,
+
   .notifications-main {
-    width: min(100% - 22px, 980px);
+
+    width: calc(100% - 22px);
+
   }
+
+
 
   .notifications-header {
+
+    gap: 10px;
+
     padding-top: 18px;
+
   }
+
+
 
   .notifications-header h1 {
+
     font-size: 24px;
+
   }
+
+
 
   .notifications-header p {
+
     font-size: 12px;
+
   }
+
+
 
   .notifications-header-icon {
+
     width: 42px;
+
     height: 42px;
+
+    font-size: 22px;
+
   }
+
+
+
+  .notifications-back-btn {
+
+    width: 40px;
+
+    height: 40px;
+
+  }
+
+
 
   .notifications-summary {
+
     align-items: flex-start;
+
+    gap: 12px;
+
     padding: 18px;
+
   }
+
+
+
+  .notifications-summary h2 {
+
+    font-size: 22px;
+
+  }
+
+
+
+  .notifications-summary p {
+
+    font-size: 12px;
+
+  }
+
+
 
   .unread-counter {
-    min-width: 72px;
+
+    min-width: 65px;
+
+    padding: 10px;
+
   }
 
+
+
+  .unread-counter strong {
+
+    font-size: 23px;
+
+  }
+
+
+
+  .patient-reminders {
+
+    padding: 16px;
+
+  }
+
+
+
+  .patient-reminders-header {
+
+    flex-direction: column;
+
+  }
+
+
+
+  .patient-reminders-header h2 {
+
+    font-size: 21px;
+
+  }
+
+
+
+  .add-reminder-btn {
+
+    width: 100%;
+
+  }
+
+
+
+  .reminder-summary-row {
+
+    gap: 7px;
+
+  }
+
+
+
+  .reminder-summary-item {
+
+    padding: 10px 8px;
+
+  }
+
+
+
+  .reminder-summary-item strong {
+
+    font-size: 21px;
+
+  }
+
+
+
+  .reminder-summary-item span {
+
+    font-size: 10px;
+
+  }
+
+
+
+  .reminder-form {
+
+    padding: 14px;
+
+  }
+
+
+
+  .reminder-form-row {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+
+  .patient-reminder-card {
+
+    gap: 10px;
+
+    padding: 12px;
+
+  }
+
+
+
+  .patient-reminder-icon {
+
+    width: 38px;
+
+    height: 38px;
+
+    font-size: 19px;
+
+  }
+
+
+
+  .reminder-date-time {
+
+    flex-direction: column;
+
+    gap: 6px;
+
+  }
+
+
+
   .notifications-toolbar {
+
     align-items: stretch;
+
+    flex-direction: column;
+
+  }
+
+
+
+  .notification-filters {
+
+    width: 100%;
+
+  }
+
+
+
+  .filter-btn {
+
+    flex: 1;
+
+    justify-content: center;
+
+  }
+
+
+
+  .mark-all-btn {
+
+    width: 100%;
+
+  }
+
+
+
+  .notification-card-button {
+
+    grid-template-columns: 40px minmax(0, 1fr) 12px;
+
+    gap: 10px;
+
+    padding: 13px;
+
+  }
+
+
+
+  .notification-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    font-size: 20px;
+
+  }
+
+
+
+  .notification-content h3 {
+
+    font-size: 15px;
+
+  }
+
+
+
+  .notification-content p {
+
+    font-size: 12px;
+
+  }
+
+
+
+  .notifications-bottom-nav {
+
+    bottom: 8px;
+
+    gap: 3px;
+
+    padding: 6px;
+
+  }
+
+
+
+  .notifications-bottom-nav button {
+
+    min-height: 54px;
+
+  }
+
+
+
+  .notifications-bottom-nav button span {
+
+    font-size: 9px;
+
+  }
+
+}
+
+
+
+@media (max-width: 380px) {
+
+  .notifications-summary {
+
+    flex-direction: column;
+
+  }
+
+
+
+  .unread-counter {
+
+    display: flex;
+
+    width: 100%;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+  }
+
+
+
+  .reminder-summary-row {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+
+  .reminder-summary-item {
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+  }
+
+}
+
+.active-health-alarm {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 15px;
+
+  margin-bottom: 22px;
+
+  padding: 20px;
+
+  border: 2px solid #dc2626;
+
+  border-radius: 16px;
+
+  background: #fff1f1;
+
+  box-shadow: 0 8px 25px rgba(220, 38, 38, 0.12);
+
+  animation: alarm-pulse 1.2s ease-in-out infinite;
+
+}
+
+
+
+.active-health-alarm-icon {
+
+  font-size: 32px;
+
+}
+
+
+
+.active-health-alarm-content {
+
+  flex: 1;
+
+  min-width: 0;
+
+}
+
+
+
+.active-health-alarm-content > span {
+
+  color: #b91c1c;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+
+}
+
+
+
+.active-health-alarm-content h2 {
+
+  margin: 7px 0;
+
+  color: #991b1b;
+
+  font-size: 20px;
+
+}
+
+
+
+.active-health-alarm-content p {
+
+  color: #7f1d1d;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+}
+
+
+
+.active-health-alarm-actions {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 14px;
+
+}
+
+
+
+.active-health-alarm-actions button {
+
+  min-height: 40px;
+
+  padding: 10px 14px;
+
+  border: 0;
+
+  border-radius: 9px;
+
+  background: #b91c1c;
+
+  color: #ffffff;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+}
+
+
+
+.active-health-alarm-actions button:hover {
+
+  background: #991b1b;
+
+}
+
+
+
+@keyframes alarm-pulse {
+
+  0%,
+
+  100% {
+
+    box-shadow: 0 0 0 rgba(220, 38, 38, 0.08);
+
+  }
+
+
+
+  50% {
+
+    box-shadow: 0 0 18px rgba(220, 38, 38, 0.2);
+
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+  .active-health-alarm {
+
+    padding: 14px;
+
+    gap: 10px;
+
+  }
+
+
+
+  .active-health-alarm-content h2 {
+
+    font-size: 17px;
+
+  }
+
+
+
+  .active-health-alarm-actions {
+
+    flex-direction: column;
+
+  }
+
+
+
+  .active-health-alarm-actions button {
+
+    width: 100%;
+
+  }
+
+}
+
+/* Alarm and browser notification controls */
+.reminder-alert-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.reminder-alert-controls .notification-permission-btn {
+  margin-top: 0;
+}
+
+.active-health-alarm-actions button:last-child {
+  background: #7f1d1d;
+}
+
+.active-health-alarm-actions button:last-child:hover {
+  background: #641616;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(176, 24, 24, 0.35);
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .reminder-alert-controls {
     flex-direction: column;
   }
 
-  .notification-filters {
+  .reminder-alert-controls .notification-permission-btn {
     width: 100%;
-  }
-
-  .filter-btn {
-    flex: 1;
-    justify-content: center;
-  }
-
-  .mark-all-btn {
-    width: 100%;
-  }
-
-  .notification-card-button {
-    grid-template-columns: 42px 1fr 14px;
-    padding: 14px;
-    gap: 11px;
-  }
-
-  .notification-icon {
-    width: 42px;
-    height: 42px;
-    font-size: 20px;
-  }
-
-  .notification-content h3 {
-    font-size: 15px;
-  }
-
-  .notification-content p {
-    font-size: 12px;
-  }
-
-  .notifications-bottom-nav {
-    bottom: 8px;
   }
 }

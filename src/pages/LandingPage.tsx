@@ -6,7 +6,6 @@ import sky from "../assets/sky.png";
 import monument from "../assets/monument.png";
 import hospital from "../assets/hospital.png";
 import stateLogoAndArise from "../assets/state-logo-and-arise.png";
-import waveBottom from "../assets/wave-bottom.png";
 
 const languages = [
   "🇬🇧 English",
@@ -335,11 +334,11 @@ export default function LandingPage() {
       {/* ===============================
           BOTTOM WAVE
       =============================== */}
-      <img
+      {/* <img
         src={waveBottom}
         alt=""
         className="waveBottom"
-      />
+      /> */}
 
     </main>
   );

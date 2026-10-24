@@ -31,7 +31,7 @@ import CardiacArrest from "../pages/CardiacArrest";
 import Referrals from "../pages/Referral";
 import Profile from "../pages/Profile";
 import ChildHealth from "../pages/ChildHealth";
-
+import HealthEducation from "../pages/HealthEducation";
 // ===============================
 // LANGUAGE & ONBOARDING
 // ===============================
@@ -273,6 +273,11 @@ function AppRouter() {
           path="/health-education/breast-cancer"
           element={<BreastCancerAwareness />}
         />
+
+        <Route
+  path="/health-education"
+  element={<HealthEducation />}
+/>
 
       </Routes>
     </BrowserRouter>
